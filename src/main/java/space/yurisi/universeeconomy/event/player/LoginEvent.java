@@ -1,5 +1,6 @@
 package space.yurisi.universeeconomy.event.player;
 
+import net.kyori.adventure.text.Component;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -8,6 +9,7 @@ import space.yurisi.universecore.database.DatabaseManager;
 import space.yurisi.universecore.database.models.User;
 import space.yurisi.universecore.database.repositories.MoneyRepository;
 import space.yurisi.universecore.database.repositories.UserRepository;
+import space.yurisi.universecore.expection.UserNotFoundException;
 
 public class LoginEvent implements Listener {
 
@@ -24,9 +26,14 @@ public class LoginEvent implements Listener {
 
         Player player = event.getPlayer();
 
-        User user = userRepository.getUserFromUUID(player.getUniqueId());
-        if(!moneyRepository.existsMoneyFromUserId(user.getId())){
-            moneyRepository.createMoney(user);
+        try {
+            User user = userRepository.getUserFromUUID(player.getUniqueId());
+            if(!moneyRepository.existsMoneyFromUserId(user.getId())){
+                moneyRepository.createMoney(user);
+            }
+        }catch (UserNotFoundException e){
+            player.kick(Component.text("マネーの作成でエラーが発生しました。管理者に報告してください。"));
+
         }
     }
 }

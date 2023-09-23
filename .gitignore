@@ -1,3 +1,6 @@
 .gradle
 .idea
 build
+./UniverseEconomy.iml
+./UniverseEconomy.ipr
+./UniverseEconomy.iws

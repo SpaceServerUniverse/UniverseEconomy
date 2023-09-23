@@ -26,7 +26,8 @@ repositories {
 
 dependencies {
     compileOnly "io.papermc.paper:paper-api:1.20.1-R0.1-SNAPSHOT"
-    compileOnly "space.yurisi:universecore:1.1"
+    //implementation(fileTree(dir: 'lib', include: ['*.jar']))
+    compileOnly "space.yurisi:universecore:1.3"
 }
 
 
