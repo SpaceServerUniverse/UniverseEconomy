@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"space.yurisi.universeeconomy"},{"l":"space.yurisi.universeeconomy.command"},{"l":"space.yurisi.universeeconomy.event"},{"l":"space.yurisi.universeeconomy.event.player"},{"l":"space.yurisi.universeeconomy.exception"},{"l":"space.yurisi.universeeconomy.file"},{"l":"すべてのパッケージ","u":"allpackages-index.html"}];updateSearchResults();
