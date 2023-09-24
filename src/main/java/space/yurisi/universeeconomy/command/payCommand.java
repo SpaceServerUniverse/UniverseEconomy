@@ -29,8 +29,8 @@ public class payCommand extends BaseCommand {
             return true;
         }
 
-        if(from_player.getName().equals(from_player.getName())){
-            from_player.performCommand("mymoney");
+        if(from_player.getName().equals(to_player.getName())){
+            from_player.sendMessage(getErrorMessage("自分にはpayできません。"));
             return true;
         }
 
