@@ -5,10 +5,9 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
-import space.yurisi.universecore.expection.MoneyNotFoundException;
-import space.yurisi.universecore.expection.UserNotFoundException;
+import space.yurisi.universecore.exception.MoneyNotFoundException;
+import space.yurisi.universecore.exception.UserNotFoundException;
 import space.yurisi.universeeconomy.UniverseEconomyAPI;
-import space.yurisi.universeeconomy.exception.CanNotAddMoneyException;
 import space.yurisi.universeeconomy.exception.ParameterException;
 
 import static java.lang.Long.parseLong;

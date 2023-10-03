@@ -8,8 +8,6 @@ import space.yurisi.universeeconomy.command.CommandManager;
 import space.yurisi.universeeconomy.event.EventManager;
 import space.yurisi.universeeconomy.file.Config;
 
-import java.util.logging.Logger;
-
 public final class UniverseEconomy extends JavaPlugin {
 
     private DatabaseManager databaseManager;

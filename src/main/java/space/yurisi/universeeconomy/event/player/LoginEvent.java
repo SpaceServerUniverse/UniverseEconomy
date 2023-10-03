@@ -9,7 +9,7 @@ import space.yurisi.universecore.database.DatabaseManager;
 import space.yurisi.universecore.database.models.User;
 import space.yurisi.universecore.database.repositories.MoneyRepository;
 import space.yurisi.universecore.database.repositories.UserRepository;
-import space.yurisi.universecore.expection.UserNotFoundException;
+import space.yurisi.universecore.exception.UserNotFoundException;
 
 public class LoginEvent implements Listener {
 
